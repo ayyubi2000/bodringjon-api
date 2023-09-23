@@ -15,20 +15,20 @@ return [
     |
     */
 
-    'paths' => ['api/*','/*', 'sanctum/csrf-cookie'],
+    'paths' => ['*', 'sanctum/csrf-cookie', 'login', 'logout'],
 
+    'allowed_origins' => ['https://admin.bodringjon.uz', 'https://bodringjon.uz'],
+    
     'allowed_methods' => ['*'],
-
-    'allowed_origins' => ['*'],
-
-    'allowed_origins_patterns' => [],
-
+    
     'allowed_headers' => ['*'],
-
+    
     'exposed_headers' => [],
+    
+    'max_age' => 0,
+    
+    'supports_credentials' => false,
 
-    'max_age' => 3600,
-
-    'supports_credentials' => true,
+    'allowed_origins_patterns' => []
 
 ];
