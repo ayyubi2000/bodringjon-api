@@ -17,7 +17,7 @@ return [
 
     'paths' => ['*'],
 
-    'allowed_origins' => ['*.bodringjon.uz'],
+    'allowed_origins' => ['*'],
     
     'allowed_methods' => ['*'],
     
