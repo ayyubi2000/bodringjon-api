@@ -15,9 +15,9 @@ return [
     |
     */
 
-    'paths' => ['*', 'settings', 'sanctum/csrf-cookie', 'login', 'logout'],
+    'paths' => ['*'],
 
-    'allowed_origins' => ['https://admin.bodringjon.uz', 'https://bodringjon.uz'],
+    'allowed_origins' => ['*.bodringjon.uz'],
     
     'allowed_methods' => ['*'],
     
