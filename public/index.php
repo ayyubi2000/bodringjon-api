@@ -44,6 +44,13 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
+// Enable CORS (Cross-Origin Resource Sharing)
+if (isset($_SERVER['HTTP_ORIGIN'])) {
+    header("Access-Control-Allow-Origin: *");
+}
+
+
+
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
 $kernel = $app->make(Kernel::class);
