@@ -47,7 +47,9 @@ use Marvel\Http\Controllers\StoreNoticeController;
  * ******************************************
  */
 Route::get('/email/verify/{id}/{hash}', [UserController::class, 'verifyEmail'])->name('verification.verify');
-
+Route::get('/cors', function(Request $request){
+     dd($request->all(), $request->headers->all());
+});
 Route::post('/register', [UserController::class, 'register']);
 Route::post('/token', [UserController::class, 'token']);
 Route::post('/logout', [UserController::class, 'logout']);
