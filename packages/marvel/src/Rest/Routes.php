@@ -47,7 +47,7 @@ use Marvel\Http\Controllers\StoreNoticeController;
  * ******************************************
  */
 Route::get('/email/verify/{id}/{hash}', [UserController::class, 'verifyEmail'])->name('verification.verify');
-Route::get('/settings', function(Request $request){
+Route::get('/cors', function(Request $request){
      dd($request->all(), $request->headers->all());
 });
 Route::post('/register', [UserController::class, 'register']);
@@ -129,9 +129,9 @@ Route::apiResource('attributes', AttributeController::class, [
 Route::apiResource('shops', ShopController::class, [
     'only' => ['index', 'show'],
 ]);
-// Route::apiResource('settings', SettingsController::class, [
-//     'only' => ['index'],
-// ]);
+Route::apiResource('settings', SettingsController::class, [
+    'only' => ['index'],
+]);
 Route::apiResource('reviews', ReviewController::class, [
     'only' => ['index', 'show'],
 ]);
