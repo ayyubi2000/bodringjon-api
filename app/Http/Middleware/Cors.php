@@ -13,7 +13,7 @@ class Cors
         $response->headers->set('Access-Control-Allow-Origin', '*');
         $response->headers->set('Access-Control-Allow-Methods', '*');
         $response->headers->set('Access-Control-Allow-Headers', '*');
-        $response->headers->set('Accept-Language', 'cors shashvar');
+        $response->headers->set('Accept-ayubxon', 'cors shashvar');
 
         return $response;
     }
