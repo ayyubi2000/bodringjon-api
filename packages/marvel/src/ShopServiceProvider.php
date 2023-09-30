@@ -85,6 +85,7 @@ class ShopServiceProvider extends ServiceProvider
         'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
         'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
         'email.verified' => EnsureEmailIsVerified::class,
+        'cors' =>   \App\Http\Middleware\Cors::class,
     ];
 
 
