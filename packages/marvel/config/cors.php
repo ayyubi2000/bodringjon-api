@@ -17,18 +17,17 @@ return [
 
     'paths' => ['api/*', '*', 'sanctum/csrf-cookie', 'graphql'],
 
-    'allowed_methods' => ['*'],
+    'allowed_methods' => ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['https://admin.bodringjon.uz'],
 
     'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['*'],
+    'allowed_headers' => ['Content-Type', 'Authorization'],
 
     'exposed_headers' => [],
 
     'max_age' => 0,
 
     'supports_credentials' => false,
-
 ];
