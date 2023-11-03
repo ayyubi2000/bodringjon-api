@@ -74,6 +74,7 @@
         <li><a href="https://pickbazar-doc.vercel.app/">Documentation</a></li>
         <li><a href="http://redqsupport.ticksy.com/">Support</a></li>
         <li><a href="https://redq.io/">Contact</a></li>
+        <li><a href="#">welcome</a></li>
     </ul>
 </body>
 
